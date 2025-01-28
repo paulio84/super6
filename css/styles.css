@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 4px 0px;
+  text-align: left;
+  background-color: #0084d1;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+th:first-child, td:first-child {
+  text-align: center;
+  width: 10%;
+  background-color: #0084d1;
+  color: white;
+  padding-left: 0px;
+  font-weight: bold;
+}
+
+td {
+  padding: 4px 0px;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding-left: 8px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 25%;
+}
+
+th:nth-child(3), td:nth-child(3),
+th:nth-child(4), td:nth-child(4),
+th:nth-child(5), td:nth-child(5),
+th:nth-child(6), td:nth-child(6),
+th:nth-child(7), td:nth-child(7) {
+  text-align: center;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+
+.champ, .champ > td {
+  background-color: #fcaa00 !important;
+  color: #000;
+}
+
+.u {
+color: lime;
+}
+
+.d {
+color: orangered;
+}
+
+.s {
+color: black;
+}
+
+@media (min-width: 1024px) {
+  table {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1228px) {
+  table {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1440px) {
+  table {
+    width: 50%;
+  }
+}
+
+p.updated {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 12px;
+}
+
+p.correct {
+  margin-top: 10px;
+}
